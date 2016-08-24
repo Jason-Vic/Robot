@@ -24,7 +24,7 @@ public class HttpUtils {
     private static final String url = "http://www.tuling123.com/openapi/api";
     private static final String apiKey = "26376d2ebefc4be08e3784d8d8875d18";
 
-    private static ChatMessage sendMessage(String message) {
+    public static ChatMessage sendMessage(String message) {
         ChatMessage chatMessage = new ChatMessage();
         String jsonRes = doGet(message);
         Gson gson = new Gson();
